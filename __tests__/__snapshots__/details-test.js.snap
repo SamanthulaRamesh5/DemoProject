@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` tests Render the component correctly  1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "gray",
+      "borderRadius": 10,
+      "margin": 10,
+      "padding": 5,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "textTransform": "capitalize",
+      }
+    }
+  >
+    qui est esse
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "white",
+        "fontSize": 16,
+      }
+    }
+  >
+    est rerum tempore vitae
+  </Text>
+  <Text />
+</View>
+`;
