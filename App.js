@@ -1,10 +1,17 @@
 // In App.js in a new project
 
-import * as React from 'react';
+import  React,{useEffect}  from 'react';
+// import { useEffect } from 'react';
+import SplashScreen from 'react-native-splash-screen';
 import { NavigationContainer} from '@react-navigation/native';
 // import AppNavigator from './app/screens/navigation';
 import AppNavigator from './app/screens/navigation';
+import DashBoard from './app/screens/dashboard';
+
 function App() {
+  React.useEffect(()=>{
+    SplashScreen.hide();
+  },[])
   return (
     <NavigationContainer>
       <AppNavigator/>

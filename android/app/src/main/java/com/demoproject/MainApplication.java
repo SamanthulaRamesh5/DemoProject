@@ -1,4 +1,8 @@
 package com.demoproject;
+// react-native-splash-screen >= 0.3.1
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
+ import com.oblador.vectoricons.VectorIconsPackage;
+
 
 import android.app.Application;
 import android.content.Context;
@@ -26,6 +30,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
+           new SplashScreenReactPackage(); //here
+           new VectorIconsPackage();
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
           return packages;
